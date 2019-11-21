@@ -4,6 +4,22 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "CC",
+            "command": "g++",
+            "windows": {
+                "command": "C:\\TDM-GCC-64\\bin\\g++.exe"
+            },
+            "args": [
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.exe",
+                "${file}"
+            ]
+        },
+        {
+            "label": "CR",
+            "command": "${fileDirname}/${fileBasenameNoExtension}.exe"
+        },
+        {
             "label": "JC",
             "command": "javac",
             "windows": {
